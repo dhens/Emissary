@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Emissary (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Emissary (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
