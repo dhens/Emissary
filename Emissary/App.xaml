@@ -6,6 +6,7 @@
     xmlns:local="using:Emissary">
     <Application.Resources>
         <ResourceDictionary>
+            <Color x:Key="SystemAccentColor">#ef8f2e</Color>
             <ResourceDictionary.MergedDictionaries>
                 <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
                 <!-- Other merged dictionaries here -->

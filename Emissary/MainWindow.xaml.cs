@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
@@ -27,7 +28,25 @@ namespace Emissary
         {
             this.InitializeComponent();
             this.Title = "Hellow, world!";
+            this.AppWindow.Resize(new Windows.Graphics.SizeInt32(400, 400));
+
         }
+
+        private void ConnectToDrawbridge(object sender, RoutedEventArgs e)
+        {
+            Windows.Web.Http.HttpClient httpClient = new Windows.Web.Http.HttpClient();
+            var headers = httpClient.DefaultRequestHeaders;
+            string drawbridgeURL = DrawbridgeURL.Text;
+
+            //BaseAddress
+        }
+
+        private void GetDrawbridgeInputText()
+        {
+        }
+
+
+
 
       //  public Set
 

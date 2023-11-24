@@ -9,9 +9,24 @@
     mc:Ignorable="d">
 
 
-    <StackPanel>
-        <TextBox x:Name="TB1" Width="300" Header="Enter Drawbridge URL or IP" PlaceholderText="https://drawbridge.mysite.com"/>
-        <TextBlock>Serial Number</TextBlock>
-        <TextBlock x:Name="SNTB">...</TextBlock>
-    </StackPanel>
+    <Grid x:Name="LayoutRoot" Width="400" Height="400">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,8,0,0">
+            <TextBox x:Name="DrawbridgeURL" Width="300" Header="Enter Drawbridge URL or IP" PlaceholderText="https://drawbridge.mysite.com"/>
+            <Button Click="ConnectToDrawbridge">Connect to Drawbridge</Button>
+            <StackPanel Orientation="Horizontal" x:Name="MachineInfo" Margin="0,32,0,0">
+                <StackPanel Orientation="Vertical" VerticalAlignment="Top" Margin="0,0,8,0">
+                    <TextBlock x:Name="SerialNumberLabel">Serial Number</TextBlock>
+                    <TextBlock x:Name="SerialNumberTB">...</TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" VerticalAlignment="Top" Margin="0,0,8,0">
+                    <TextBlock x:Name="OsVersion">OS Version</TextBlock>
+                    <TextBlock x:Name="OsVersionTB">...</TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" VerticalAlignment="Top" Margin="0,0,8,0">
+                    <TextBlock x:Name="OsVersionTwo">OS Version</TextBlock>
+                    <TextBlock x:Name="OsVersionTwoTB">...</TextBlock>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
 </Window>
